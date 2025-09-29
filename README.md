@@ -1,29 +1,46 @@
-# Project 2 – Classification on Stress Dataset
+# Project 2: Student Stress Classification
 
 ## Overview
-This project applies machine learning classification models to the **Stress Level Dataset**.  
-The goal is to predict stress levels based on other features in the data and compare model performance.
+This project explores whether machine learning models can classify **student stress levels** (low, moderate, high) using academic, personal, and social factors.  
+The dataset comes from Kaggle’s **Student Stress Monitoring Dataset**, and the goal was to compare multiple classification algorithms to see which performs best.
 
 ## Models Used
-- Naive Bayes  
-- K-Nearest Neighbors (KNN)  
-- Support Vector Machine (SVM)  
-- Random Forest  
+- **Naive Bayes** – Simple, fast, works well with categorical-like data.  
+- **K-Nearest Neighbors (KNN)** – Classifies by comparing to the closest data points.  
+- **Support Vector Machine (SVM)** – Finds the best decision boundary between classes.  
+- **Random Forest** – Ensemble of decision trees, handles complex data well.  
 
 ## Process
-1. **Load Data** – imported `stressleveldataset.csv` with pandas.  
-2. **Preprocess** – split into features (X) and target (y), then into training/testing sets.  
-3. **Train Models** – fit each of the four classifiers.  
-4. **Evaluate** – measured accuracy for each model and compared results with a table and bar chart.  
+1. **Problem Definition** – Framed stress prediction as a classification problem.  
+2. **Data Preprocessing** – Split features (`X`) and target (`y`), train/test split (80/20).  
+3. **Exploratory Data Analysis** – Plotted stress distribution, correlation heatmap, and feature vs. stress comparisons.  
+4. **Modeling** – Trained four classifiers and compared their performance.  
+5. **Evaluation** – Measured accuracy, reviewed results, and discussed insights.  
+6. **Storytelling & Conclusion** – Tied results back to the original question and discussed implications.  
+7. **Impact** – Reflected on benefits and risks of stress prediction in education.  
 
 ## Results
-- Each model gave different accuracy values.  
-- Random Forest usually gave the best performance.  
-- Naive Bayes was the fastest but slightly less accurate.  
-- SVM worked well when the data was well separated.  
+- **Naive Bayes & SVM** achieved ~90% accuracy.  
+- **KNN & Random Forest** followed closely at ~88%.  
+- All models showed strong potential, but no single method was perfect.  
+
+## Key Insights
+- Stress levels can be predicted fairly well using survey-based factors like anxiety, self-esteem, academic performance, and social support.  
+- Visualization showed clear patterns: higher anxiety and lower self-esteem linked to higher stress.  
+- Machine learning could support student well-being, but fairness and ethical use must be considered.  
+
+## Dataset
+- [Student Stress Monitoring Dataset – Kaggle](https://www.kaggle.com/datasets/mdsultanulislamiovi/student-stress-monitoring-datasets)  
+
+## References
+- Brownlee, J. (2016). *Supervised Machine Learning Algorithms*. Machine Learning Mastery.  
+  [Link](https://machinelearningmastery.com/supervised-learning-algorithms/)  
 
 ## How to Run
-1. Clone this repository.  
-2. Install the required packages:  
-   ```bash
-   pip install pandas scikit-learn matplotlib
+1. Clone the repo.  
+2. Open `Project2FINAL.ipynb` in Jupyter Notebook or JupyterLab.  
+3. Run the cells in order.  
+
+---
+
+
